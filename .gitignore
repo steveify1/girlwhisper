@@ -1,0 +1,9 @@
+# node modules
+node_modules/
+
+# test reporter
+coverage/
+
+#environment variables
+*.env
+
