@@ -3,6 +3,7 @@ node_modules/
 
 # test reporter
 coverage/
+.nyc_output/
 
 #environment variables
 *.env
