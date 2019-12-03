@@ -4,7 +4,7 @@
   "description": "A web application that allow women to share ideas, views and experiences",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc --reporter=html --reporter=text mocha src/tests --recursive --timeout=5000"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-node": "^4.0.0",
@@ -39,6 +40,10 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
-    "prettier": "^1.19.1"
+    "mocha": "^6.2.2",
+    "mockgoose": "^8.0.4",
+    "nyc": "^14.1.1",
+    "prettier": "^1.19.1",
+    "supertest": "^4.0.2"
   }
 }
